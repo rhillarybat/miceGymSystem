@@ -24,5 +24,11 @@ namespace MiceGymSystem
         {
             InitializeComponent();
         }
+
+        private void onTeste(object sender, MouseButtonEventArgs e)
+        {
+            
+            MessageBox.Show("Teste");
+        }
     }
 }
