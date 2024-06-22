@@ -56,3 +56,7 @@ C:\Users\giori\OneDrive\Área de Trabalho\miceGymSystem\System\MiceGymSystem\bin
 C:\Users\giori\OneDrive\Área de Trabalho\miceGymSystem\System\MiceGymSystem\bin\Debug\System.Threading.Tasks.Extensions.xml
 C:\Users\giori\OneDrive\Área de Trabalho\miceGymSystem\System\MiceGymSystem\obj\Debug\MiceGymSystem.csproj.SuggestedBindingRedirects.cache
 C:\Users\giori\OneDrive\Área de Trabalho\miceGymSystem\System\MiceGymSystem\obj\Debug\MiceGymSystem.exe.config
+C:\Users\giori\OneDrive\Área de Trabalho\miceGymSystem\System\MiceGymSystem\obj\Debug\View\CreateAccount.g.cs
+C:\Users\giori\OneDrive\Área de Trabalho\miceGymSystem\System\MiceGymSystem\obj\Debug\View\MenuBaseForm.g.cs
+C:\Users\giori\OneDrive\Área de Trabalho\miceGymSystem\System\MiceGymSystem\obj\Debug\View\CreateAccount.baml
+C:\Users\giori\OneDrive\Área de Trabalho\miceGymSystem\System\MiceGymSystem\obj\Debug\View\MenuBaseForm.baml

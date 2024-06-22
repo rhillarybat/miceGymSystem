@@ -63,6 +63,11 @@ namespace MiceGymSystem
 
         private void btNewAccount_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
+            
+        }
+
+        private void btNewAccount_MouseLeftButtonDown_1(object sender, MouseButtonEventArgs e)
+        {
             CreateAccount form = new CreateAccount();
             form.Show();
             this.Close();

@@ -45,7 +45,7 @@
                     <TextBlock x:Name="btNewSenha" Text="Esqueci minha senha" Foreground="White" HorizontalAlignment="Right" TextDecorations="Underline"/>
                 </StackPanel>
                 <StackPanel Width="500">
-                    <TextBlock x:Name="btNewAccount" Text="Criar nova conta" Foreground="White" HorizontalAlignment="Right" TextDecorations="Underline"/>
+                    <TextBlock x:Name="btNewAccount" Text="Criar nova conta" Foreground="White" HorizontalAlignment="Right" TextDecorations="Underline" MouseLeftButtonDown="btNewAccount_MouseLeftButtonDown_1"/>
                 </StackPanel>
             </StackPanel>
         </Grid>
