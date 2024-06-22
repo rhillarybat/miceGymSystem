@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MiceGymSystem.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -29,6 +30,26 @@ namespace MiceGymSystem
         {
             
             MessageBox.Show("Teste");
+        }
+
+        private void btEntrar_Click(object sender, RoutedEventArgs e)
+        {
+            UsuarioDAO user = new UsuarioDAO();
+            if (tbEmail.Text != "" && tbSenha.Password != "")
+            {
+                if (user.Login(tbEmail.Text, tbSenha.Password) == 1)
+                {
+                    MessageBox.Show("Acho!");
+                }
+                else
+                {
+                    MessageBox.Show("N Acho!");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Preencha todos os campos!");
+            }
         }
     }
 }
