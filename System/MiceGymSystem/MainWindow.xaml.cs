@@ -1,4 +1,5 @@
 ﻿using MiceGymSystem.Models;
+using MiceGymSystem.View;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -35,21 +36,36 @@ namespace MiceGymSystem
         private void btEntrar_Click(object sender, RoutedEventArgs e)
         {
             UsuarioDAO user = new UsuarioDAO();
+            Usuario objUser = new Usuario();
+
             if (tbEmail.Text != "" && tbSenha.Password != "")
             {
-                if (user.Login(tbEmail.Text, tbSenha.Password) == 1)
+                string email = tbEmail.Text;
+                string senha = tbSenha.Password;
+                objUser = user.Login(email, senha);
+
+                if (user.count == 1)
                 {
-                    MessageBox.Show("Acho!");
+                    //MenuBaseForm form = new MenuBaseForm(objUser);
+                    //form.Show();
+                    //this.Close();
                 }
                 else
                 {
-                    MessageBox.Show("N Acho!");
+                    MessageBox.Show("Usuáiro ou Senha incorretos!");
                 }
             }
             else
             {
                 MessageBox.Show("Preencha todos os campos!");
             }
+        }
+
+        private void btNewAccount_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            CreateAccount form = new CreateAccount();
+            form.Show();
+            this.Close();
         }
     }
 }
