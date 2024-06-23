@@ -5,8 +5,89 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MiceGymSystem.View"
         mc:Ignorable="d"
-        Title="MenuBaseForm" Height="450" Width="800">
+        Style="{StaticResource MaterialDesignWindow}"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        TextElement.FontWeight="Regular"
+        TextElement.FontSize="13"
+        TextOptions.TextFormattingMode="Ideal" 
+        TextOptions.TextRenderingMode="Auto"
+        FontFamily="{DynamicResource MaterialDesignFont}"
+        Title="Menu" Height="720" Width="1280" Icon="/Resources/Alter.png" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Window.Background>
+        <ImageBrush ImageSource="/Resources/Background.png"/>
+    </Window.Background>
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="6*"/>
+            <ColumnDefinition Width="2*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="5*"/>
+        </Grid.RowDefinitions>
+
+        <Grid>
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Top" Margin="30,30,0,0">
+                <StackPanel Height="37" Width="82">
+                    <StackPanel.Background>
+                        <ImageBrush ImageSource="/Resources/Alter.png"/>
+                    </StackPanel.Background>
+                </StackPanel>
+                <StackPanel Height="24" VerticalAlignment="Center" Orientation="Horizontal">
+                    <TextBlock Text="MICE GYM" Width="646" Foreground="White" Height="34" FontWeight="Bold" FontSize="18" Margin="19.6,0,0,0"/>
+                </StackPanel>
+
+            </StackPanel>
+
+        </Grid>
+
+        <Grid Grid.Column="1">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0 25 50 0">
+                <TextBlock x:Name="lbNomeUser" Text="USUÁRIO (NOME)" Foreground="White" FontWeight="SemiBold" Margin="0 10 10 0" VerticalAlignment="Top" FontSize="16" TextAlignment="Right"/>
+                <materialDesign:PackIcon Kind="AccountCircle" Foreground="White" Width="40" Height="40" />
+            </StackPanel>
+        </Grid>
+
+        <Grid Grid.Row="1" HorizontalAlignment="Left" Margin="30,30,0,0">
+            <StackPanel>
+                <Button x:Name="btCliente" Margin="0 0 0 20"
+            materialDesign:ButtonAssist.CornerRadius="5"
+            IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}"
+            Style="{StaticResource MaterialDesignRaisedLightButton}"
+            ToolTip="MaterialDesignRaisedLightButton with Round Corners" Width="400" Height="50" Background="White" BorderBrush="White" Click="btCliente_Click">
+                    <TextBlock Text="CADASTRAR CLIENTE" FontWeight="Bold" FontSize="18" />
+                </Button>
+                <Button x:Name="btFornecedor" Margin="0 0 0 20"
+materialDesign:ButtonAssist.CornerRadius="5"
+IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}"
+Style="{StaticResource MaterialDesignRaisedLightButton}"
+ToolTip="MaterialDesignRaisedLightButton with Round Corners" Width="400" Height="50" Background="White" BorderBrush="White">
+                    <TextBlock Text="CADASTRAR FORNECEDOR" FontWeight="Bold" FontSize="18" />
+                </Button>
+                <Button x:Name="btFuncionario" Margin="0 0 0 20"
+materialDesign:ButtonAssist.CornerRadius="5"
+IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}"
+Style="{StaticResource MaterialDesignRaisedLightButton}"
+ToolTip="MaterialDesignRaisedLightButton with Round Corners" Width="400" Height="50" Background="White" BorderBrush="White">
+                    <TextBlock Text="CADASTRAR FUNCIONÁRIO" FontWeight="Bold" FontSize="18" />
+                </Button>
+                <Button x:Name="btEquipamento" Margin="0 0 0 20"
+materialDesign:ButtonAssist.CornerRadius="5"
+IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}"
+Style="{StaticResource MaterialDesignRaisedLightButton}"
+ToolTip="MaterialDesignRaisedLightButton with Round Corners" Width="400" Height="50" Background="White" BorderBrush="White">
+                    <TextBlock Text="CADASTRAR EQUIPAMENTOS" FontWeight="Bold" FontSize="18" />
+                </Button>
+                <Button x:Name="btConsultas" Margin="0 0 0 20"
+materialDesign:ButtonAssist.CornerRadius="5"
+IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}"
+Style="{StaticResource MaterialDesignRaisedLightButton}"
+ToolTip="MaterialDesignRaisedLightButton with Round Corners" Width="400" Height="50" Background="White" BorderBrush="White">
+                    <TextBlock Text="CONSULTAR CONTROLE GERAL" FontWeight="Bold" FontSize="18" />
+                </Button>
+            </StackPanel>
+        </Grid>
     </Grid>
 </Window>

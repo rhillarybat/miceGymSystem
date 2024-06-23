@@ -10,6 +10,8 @@ cpf_user VARCHAR(100),
 telefone_user VARCHAR(100)
 );
 
+INSERT INTO Usuario VALUES(null, 'admin', 'admin', 'admin', null, null);
+
 CREATE TABLE Academia(
 id_aca INT PRIMARY KEY AUTO_INCREMENT,
 nome_aca VARCHAR(100),
@@ -43,9 +45,9 @@ id_cli INT PRIMARY KEY AUTO_INCREMENT,
 nome_cli VARCHAR(100),
 cpf_cli VARCHAR(100),
 email_cli VARCHAR(100),
-telefone_cli VARCHAR(100),
-fk_academia_cli INT,
-FOREIGN KEY(fk_academia_cli) REFERENCES Academia(id_aca)
+telefone_cli VARCHAR(100)
+#fk_academia_cli INT,
+#FOREIGN KEY(fk_academia_cli) REFERENCES Academia(id_aca)
 );
 
 CREATE TABLE Equipamentos(

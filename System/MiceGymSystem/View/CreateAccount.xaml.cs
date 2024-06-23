@@ -29,21 +29,56 @@ namespace MiceGymSystem.View
         {
             try
             {
-                //Setando informações na tabela cliente
-                Usuario usuario = new Usuario();
-                usuario.Nome = tbNome.Text;
-                usuario.Email = tbEmail.Text;
-                usuario.Cpf = tbCpf.Text;
-                usuario.Telefone = tbNome.Text;
-                usuario.Senha = tbSenha.Password;
+                if (tbNome.Text != "" && tbEmail.Text != "" && tbCpf.Text != "" && tbTelefone.Text != "" && tbSenha.Password != "") {
+                    Usuario usuario = new Usuario();
+                    usuario.Nome = tbNome.Text;
+                    usuario.Email = tbEmail.Text;
+                    usuario.Cpf = tbCpf.Text;
+                    usuario.Telefone = tbTelefone.Text;
+                    usuario.Senha = tbSenha.Password;
 
-                //Inserindo os Dados           
-                UsuarioDAO usuarioDAO = new UsuarioDAO();
-                usuarioDAO.Insert(usuario);
+                    //Inserindo os Dados           
+                    UsuarioDAO usuarioDAO = new UsuarioDAO();
+                    usuarioDAO.Insert(usuario);
+                    tbNome.Clear();
+                    tbEmail.Clear();
+                    tbCpf.Clear();
+                    tbTelefone.Clear();
+                    tbSenha.Clear();
+                }
+                else
+                {               
+                    MessageBox.Show("Preencha todos os campos!", "Erro", MessageBoxButton.OK, MessageBoxImage.Error);
+                }
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Erro 3008 : Contate o suporte");
+                MessageBox.Show("Erro 3008 : Contate o suporte", "Erro", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+        }
+
+        private void btCancelar_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBoxResult result = MessageBox.Show("Deseja realmente cancelar o cadastro?", "Pergunta", MessageBoxButton.YesNo, MessageBoxImage.Question);
+            if(result == MessageBoxResult.Yes)
+            {
+                tbNome.Clear();
+                tbEmail.Clear();
+                tbCpf.Clear();
+                tbTelefone.Clear();
+                tbSenha.Clear();
+                MessageBox.Show("Campos limpos com sucesso!", "Sucesso", MessageBoxButton.OK, MessageBoxImage.Information);
+            }
+        }
+
+        private void btVoltar_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBoxResult result = MessageBox.Show("Deseja realmente voltar ao login?", "Pergunta", MessageBoxButton.YesNo, MessageBoxImage.Question);
+            if (result == MessageBoxResult.Yes)
+            {
+                MainWindow form = new MainWindow();
+                form.Show();
+                this.Close();
             }
         }
     }

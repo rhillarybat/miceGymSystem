@@ -11,17 +11,30 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using MiceGymSystem.Models;
 
 namespace MiceGymSystem.View
 {
     /// <summary>
     /// Lógica interna para MenuBaseForm.xaml
     /// </summary>
+    /// 
     public partial class MenuBaseForm : Window
     {
-        public MenuBaseForm()
+        Usuario usuario;
+        public MenuBaseForm(Usuario user)
         {
             InitializeComponent();
+            usuario = user;
+
+            lbNomeUser.Text = usuario.Nome;
+        }
+
+        private void btCliente_Click(object sender, RoutedEventArgs e)
+        {
+            CreateCliente form = new CreateCliente(usuario);
+            form.Show();
+            this.Close();
         }
     }
 }

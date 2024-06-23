@@ -119,8 +119,13 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Helper\DAOHelper.cs" />
+    <Compile Include="Models\Cliente.cs" />
+    <Compile Include="Models\ClienteDAO.cs" />
     <Compile Include="View\CreateAccount.xaml.cs">
       <DependentUpon>CreateAccount.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\CreateCliente.xaml.cs">
+      <DependentUpon>CreateCliente.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\MenuBaseForm.xaml.cs">
       <DependentUpon>MenuBaseForm.xaml</DependentUpon>
@@ -141,6 +146,10 @@
     <Page Include="View\CreateAccount.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\CreateCliente.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="View\MenuBaseForm.xaml">
       <Generator>MSBuild:Compile</Generator>

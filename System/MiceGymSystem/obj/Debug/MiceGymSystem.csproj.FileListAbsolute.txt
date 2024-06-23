@@ -60,3 +60,5 @@ C:\Users\giori\OneDrive\Área de Trabalho\miceGymSystem\System\MiceGymSystem\obj
 C:\Users\giori\OneDrive\Área de Trabalho\miceGymSystem\System\MiceGymSystem\obj\Debug\View\MenuBaseForm.g.cs
 C:\Users\giori\OneDrive\Área de Trabalho\miceGymSystem\System\MiceGymSystem\obj\Debug\View\CreateAccount.baml
 C:\Users\giori\OneDrive\Área de Trabalho\miceGymSystem\System\MiceGymSystem\obj\Debug\View\MenuBaseForm.baml
+C:\Users\giori\OneDrive\Área de Trabalho\miceGymSystem\System\MiceGymSystem\obj\Debug\View\CreateCliente.g.cs
+C:\Users\giori\OneDrive\Área de Trabalho\miceGymSystem\System\MiceGymSystem\obj\Debug\View\CreateCliente.baml

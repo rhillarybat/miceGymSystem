@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:MiceGymSystem"
         Style="{StaticResource MaterialDesignWindow}"
         mc:Ignorable="d"
-        Title="MainWindow" Height="720" Width="1280">
+        Title="Login" Height="720" Width="1280" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" Icon="/Resources/Alter.png">
     <Window.Background>
         <ImageBrush ImageSource="/Resources/Background.png"/>
     </Window.Background>

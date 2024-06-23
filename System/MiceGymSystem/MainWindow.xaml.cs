@@ -46,18 +46,18 @@ namespace MiceGymSystem
 
                 if (user.count == 1)
                 {
-                    //MenuBaseForm form = new MenuBaseForm(objUser);
-                    //form.Show();
-                    //this.Close();
+                    MenuBaseForm form = new MenuBaseForm(objUser);
+                    form.Show();
+                    this.Close();
                 }
                 else
-                {
-                    MessageBox.Show("Usuáiro ou Senha incorretos!");
+                {                    
+                    MessageBox.Show("Usuário ou Senha incorretos!", "Erro", MessageBoxButton.OK, MessageBoxImage.Error);
                 }
             }
             else
-            {
-                MessageBox.Show("Preencha todos os campos!");
+            {               
+                MessageBox.Show("Preencha todos os campos!", "Erro", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
 

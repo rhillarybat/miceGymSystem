@@ -3,20 +3,52 @@
   "WorkspaceRootPath": "C:\\Users\\giori\\OneDrive\\\u00C1rea de Trabalho\\miceGymSystem\\System\\MiceGymSystem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{28846E63-3B18-4AA3-9BCB-BB79DF557F5E}|MiceGymSystem.csproj|C:\\Users\\giori\\OneDrive\\\u00C1rea de Trabalho\\miceGymSystem\\System\\MiceGymSystem\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{28846E63-3B18-4AA3-9BCB-BB79DF557F5E}|MiceGymSystem.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{28846E63-3B18-4AA3-9BCB-BB79DF557F5E}|MiceGymSystem.csproj|c:\\users\\giori\\onedrive\\\u00E1rea de trabalho\\micegymsystem\\system\\micegymsystem\\view\\createaccount.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
+      "RelativeMoniker": "D:0:0:{28846E63-3B18-4AA3-9BCB-BB79DF557F5E}|MiceGymSystem.csproj|solutionrelative:view\\createaccount.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28846E63-3B18-4AA3-9BCB-BB79DF557F5E}|MiceGymSystem.csproj|c:\\users\\giori\\onedrive\\\u00E1rea de trabalho\\micegymsystem\\system\\micegymsystem\\view\\createaccount.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{28846E63-3B18-4AA3-9BCB-BB79DF557F5E}|MiceGymSystem.csproj|solutionrelative:view\\createaccount.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28846E63-3B18-4AA3-9BCB-BB79DF557F5E}|MiceGymSystem.csproj|c:\\users\\giori\\onedrive\\\u00E1rea de trabalho\\micegymsystem\\system\\micegymsystem\\view\\createcliente.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28846E63-3B18-4AA3-9BCB-BB79DF557F5E}|MiceGymSystem.csproj|solutionrelative:view\\createcliente.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28846E63-3B18-4AA3-9BCB-BB79DF557F5E}|MiceGymSystem.csproj|c:\\users\\giori\\onedrive\\\u00E1rea de trabalho\\micegymsystem\\system\\micegymsystem\\view\\menubaseform.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
+      "RelativeMoniker": "D:0:0:{28846E63-3B18-4AA3-9BCB-BB79DF557F5E}|MiceGymSystem.csproj|solutionrelative:view\\menubaseform.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28846E63-3B18-4AA3-9BCB-BB79DF557F5E}|MiceGymSystem.csproj|C:\\Users\\giori\\OneDrive\\\u00C1rea de Trabalho\\miceGymSystem\\System\\MiceGymSystem\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28846E63-3B18-4AA3-9BCB-BB79DF557F5E}|MiceGymSystem.csproj|solutionrelative:models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28846E63-3B18-4AA3-9BCB-BB79DF557F5E}|MiceGymSystem.csproj|C:\\Users\\giori\\OneDrive\\\u00C1rea de Trabalho\\miceGymSystem\\System\\MiceGymSystem\\models\\usuariodao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28846E63-3B18-4AA3-9BCB-BB79DF557F5E}|MiceGymSystem.csproj|solutionrelative:models\\usuariodao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28846E63-3B18-4AA3-9BCB-BB79DF557F5E}|MiceGymSystem.csproj|c:\\users\\giori\\onedrive\\\u00E1rea de trabalho\\micegymsystem\\system\\micegymsystem\\view\\createcliente.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{28846E63-3B18-4AA3-9BCB-BB79DF557F5E}|MiceGymSystem.csproj|solutionrelative:view\\createcliente.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28846E63-3B18-4AA3-9BCB-BB79DF557F5E}|MiceGymSystem.csproj|c:\\users\\giori\\onedrive\\\u00E1rea de trabalho\\micegymsystem\\system\\micegymsystem\\models\\clientedao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28846E63-3B18-4AA3-9BCB-BB79DF557F5E}|MiceGymSystem.csproj|solutionrelative:models\\clientedao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{28846E63-3B18-4AA3-9BCB-BB79DF557F5E}|MiceGymSystem.csproj|c:\\users\\giori\\onedrive\\\u00E1rea de trabalho\\micegymsystem\\system\\micegymsystem\\models\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{28846E63-3B18-4AA3-9BCB-BB79DF557F5E}|MiceGymSystem.csproj|solutionrelative:models\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{28846E63-3B18-4AA3-9BCB-BB79DF557F5E}|MiceGymSystem.csproj|C:\\Users\\giori\\OneDrive\\\u00C1rea de Trabalho\\miceGymSystem\\System\\MiceGymSystem\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{28846E63-3B18-4AA3-9BCB-BB79DF557F5E}|MiceGymSystem.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{28846E63-3B18-4AA3-9BCB-BB79DF557F5E}|MiceGymSystem.csproj|c:\\users\\giori\\onedrive\\\u00E1rea de trabalho\\micegymsystem\\system\\micegymsystem\\models\\usuariodao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{28846E63-3B18-4AA3-9BCB-BB79DF557F5E}|MiceGymSystem.csproj|solutionrelative:models\\usuariodao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{28846E63-3B18-4AA3-9BCB-BB79DF557F5E}|MiceGymSystem.csproj|c:\\users\\giori\\onedrive\\\u00E1rea de trabalho\\micegymsystem\\system\\micegymsystem\\view\\menubaseform.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{28846E63-3B18-4AA3-9BCB-BB79DF557F5E}|MiceGymSystem.csproj|solutionrelative:view\\menubaseform.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{28846E63-3B18-4AA3-9BCB-BB79DF557F5E}|MiceGymSystem.csproj|C:\\Users\\giori\\OneDrive\\\u00C1rea de Trabalho\\miceGymSystem\\System\\MiceGymSystem\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{28846E63-3B18-4AA3-9BCB-BB79DF557F5E}|MiceGymSystem.csproj|solutionrelative:models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{28846E63-3B18-4AA3-9BCB-BB79DF557F5E}|MiceGymSystem.csproj|c:\\users\\giori\\onedrive\\\u00E1rea de trabalho\\micegymsystem\\system\\micegymsystem\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{28846E63-3B18-4AA3-9BCB-BB79DF557F5E}|MiceGymSystem.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{28846E63-3B18-4AA3-9BCB-BB79DF557F5E}|MiceGymSystem.csproj|C:\\Users\\giori\\OneDrive\\\u00C1rea de Trabalho\\miceGymSystem\\System\\MiceGymSystem\\database\\conexao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -38,64 +70,100 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 10,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ClienteDAO.cs",
+              "DocumentMoniker": "C:\\Users\\giori\\OneDrive\\\u00C1rea de Trabalho\\miceGymSystem\\System\\MiceGymSystem\\Models\\ClienteDAO.cs",
+              "RelativeDocumentMoniker": "Models\\ClienteDAO.cs",
+              "ToolTip": "C:\\Users\\giori\\OneDrive\\\u00C1rea de Trabalho\\miceGymSystem\\System\\MiceGymSystem\\Models\\ClienteDAO.cs",
+              "RelativeToolTip": "Models\\ClienteDAO.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAA9wBoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-23T18:22:10.797Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Cliente.cs",
+              "DocumentMoniker": "C:\\Users\\giori\\OneDrive\\\u00C1rea de Trabalho\\miceGymSystem\\System\\MiceGymSystem\\Models\\Cliente.cs",
+              "RelativeDocumentMoniker": "Models\\Cliente.cs",
+              "ToolTip": "C:\\Users\\giori\\OneDrive\\\u00C1rea de Trabalho\\miceGymSystem\\System\\MiceGymSystem\\Models\\Cliente.cs",
+              "RelativeToolTip": "Models\\Cliente.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-23T18:20:23.608Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "UsuarioDAO.cs",
-              "DocumentMoniker": "C:\\Users\\giori\\OneDrive\\\u00C1rea de Trabalho\\miceGymSystem\\System\\MiceGymSystem\\Models\\UsuarioDAO.cs",
-              "RelativeDocumentMoniker": "Models\\UsuarioDAO.cs",
-              "ToolTip": "C:\\Users\\giori\\OneDrive\\\u00C1rea de Trabalho\\miceGymSystem\\System\\MiceGymSystem\\Models\\UsuarioDAO.cs",
-              "RelativeToolTip": "Models\\UsuarioDAO.cs",
-              "ViewState": "AQIAABEAAAAAAAAAAAAiwEcAAAAwAAAA",
+              "Title": "View\\CreateCliente.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\giori\\OneDrive\\\u00C1rea de Trabalho\\miceGymSystem\\System\\MiceGymSystem\\View\\CreateCliente.xaml.cs",
+              "RelativeDocumentMoniker": "View\\CreateCliente.xaml.cs",
+              "ToolTip": "C:\\Users\\giori\\OneDrive\\\u00C1rea de Trabalho\\miceGymSystem\\System\\MiceGymSystem\\View\\CreateCliente.xaml.cs",
+              "RelativeToolTip": "View\\CreateCliente.xaml.cs",
+              "ViewState": "AQIAADcAAAAAAAAAAAAzwEsAAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-22T15:47:08.505Z",
+              "WhenOpened": "2024-06-23T18:17:05.106Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CreateCliente.xaml",
+              "DocumentMoniker": "C:\\Users\\giori\\OneDrive\\\u00C1rea de Trabalho\\miceGymSystem\\System\\MiceGymSystem\\View\\CreateCliente.xaml",
+              "RelativeDocumentMoniker": "View\\CreateCliente.xaml",
+              "ToolTip": "C:\\Users\\giori\\OneDrive\\\u00C1rea de Trabalho\\miceGymSystem\\System\\MiceGymSystem\\View\\CreateCliente.xaml",
+              "RelativeToolTip": "View\\CreateCliente.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-06-23T18:14:35.29Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "MenuBaseForm.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\giori\\OneDrive\\\u00C1rea de Trabalho\\miceGymSystem\\System\\MiceGymSystem\\View\\MenuBaseForm.xaml.cs",
+              "RelativeDocumentMoniker": "View\\MenuBaseForm.xaml.cs",
+              "ToolTip": "C:\\Users\\giori\\OneDrive\\\u00C1rea de Trabalho\\miceGymSystem\\System\\MiceGymSystem\\View\\MenuBaseForm.xaml.cs",
+              "RelativeToolTip": "View\\MenuBaseForm.xaml.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAEwCIAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-23T17:59:38.561Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "MenuBaseForm.xaml",
+              "DocumentMoniker": "C:\\Users\\giori\\OneDrive\\\u00C1rea de Trabalho\\miceGymSystem\\System\\MiceGymSystem\\View\\MenuBaseForm.xaml",
+              "RelativeDocumentMoniker": "View\\MenuBaseForm.xaml",
+              "ToolTip": "C:\\Users\\giori\\OneDrive\\\u00C1rea de Trabalho\\miceGymSystem\\System\\MiceGymSystem\\View\\MenuBaseForm.xaml",
+              "RelativeToolTip": "View\\MenuBaseForm.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-06-23T17:52:47.812Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Usuario.cs",
               "DocumentMoniker": "C:\\Users\\giori\\OneDrive\\\u00C1rea de Trabalho\\miceGymSystem\\System\\MiceGymSystem\\Models\\Usuario.cs",
               "RelativeDocumentMoniker": "Models\\Usuario.cs",
               "ToolTip": "C:\\Users\\giori\\OneDrive\\\u00C1rea de Trabalho\\miceGymSystem\\System\\MiceGymSystem\\Models\\Usuario.cs",
               "RelativeToolTip": "Models\\Usuario.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAIAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAArAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-22T15:43:18.216Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Conexao.cs",
-              "DocumentMoniker": "C:\\Users\\giori\\OneDrive\\\u00C1rea de Trabalho\\miceGymSystem\\System\\MiceGymSystem\\Database\\Conexao.cs",
-              "RelativeDocumentMoniker": "Database\\Conexao.cs",
-              "ToolTip": "C:\\Users\\giori\\OneDrive\\\u00C1rea de Trabalho\\miceGymSystem\\System\\MiceGymSystem\\Database\\Conexao.cs",
-              "RelativeToolTip": "Database\\Conexao.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAcwCUAAAAQAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-22T15:38:40.696Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "App.xaml",
-              "DocumentMoniker": "C:\\Users\\giori\\OneDrive\\\u00C1rea de Trabalho\\miceGymSystem\\System\\MiceGymSystem\\App.xaml",
-              "RelativeDocumentMoniker": "App.xaml",
-              "ToolTip": "C:\\Users\\giori\\OneDrive\\\u00C1rea de Trabalho\\miceGymSystem\\System\\MiceGymSystem\\App.xaml",
-              "RelativeToolTip": "App.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-06-22T02:24:04.559Z",
+              "WhenOpened": "2024-06-22T15:43:18.216Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 11,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\giori\\OneDrive\\\u00C1rea de Trabalho\\miceGymSystem\\System\\MiceGymSystem\\MainWindow.xaml",
               "RelativeDocumentMoniker": "MainWindow.xaml",
@@ -107,20 +175,82 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 9,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\giori\\OneDrive\\\u00C1rea de Trabalho\\miceGymSystem\\System\\MiceGymSystem\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "MainWindow.xaml.cs",
               "ToolTip": "C:\\Users\\giori\\OneDrive\\\u00C1rea de Trabalho\\miceGymSystem\\System\\MiceGymSystem\\MainWindow.xaml.cs",
               "RelativeToolTip": "MainWindow.xaml.cs",
-              "ViewState": "AQIAABMAAAAAAAAAAAAowEgAAAAZAAAA",
+              "ViewState": "AQIAAB0AAAAAAAAAAAA0wDAAAAAUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-21T01:54:51.14Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 1,
+              "Title": "CreateAccount.xaml",
+              "DocumentMoniker": "C:\\Users\\giori\\OneDrive\\\u00C1rea de Trabalho\\miceGymSystem\\System\\MiceGymSystem\\View\\CreateAccount.xaml",
+              "RelativeDocumentMoniker": "View\\CreateAccount.xaml",
+              "ToolTip": "C:\\Users\\giori\\OneDrive\\\u00C1rea de Trabalho\\miceGymSystem\\System\\MiceGymSystem\\View\\CreateAccount.xaml",
+              "RelativeToolTip": "View\\CreateAccount.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-06-23T17:35:38.027Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CreateAccount.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\giori\\OneDrive\\\u00C1rea de Trabalho\\miceGymSystem\\System\\MiceGymSystem\\View\\CreateAccount.xaml.cs",
+              "RelativeDocumentMoniker": "View\\CreateAccount.xaml.cs",
+              "ToolTip": "C:\\Users\\giori\\OneDrive\\\u00C1rea de Trabalho\\miceGymSystem\\System\\MiceGymSystem\\View\\CreateAccount.xaml.cs",
+              "RelativeToolTip": "View\\CreateAccount.xaml.cs",
+              "ViewState": "AQIAABsAAAAAAAAAAIA2wC4AAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-23T17:35:45.068Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UsuarioDAO.cs",
+              "DocumentMoniker": "C:\\Users\\giori\\OneDrive\\\u00C1rea de Trabalho\\miceGymSystem\\System\\MiceGymSystem\\Models\\UsuarioDAO.cs",
+              "RelativeDocumentMoniker": "Models\\UsuarioDAO.cs",
+              "ToolTip": "C:\\Users\\giori\\OneDrive\\\u00C1rea de Trabalho\\miceGymSystem\\System\\MiceGymSystem\\Models\\UsuarioDAO.cs",
+              "RelativeToolTip": "Models\\UsuarioDAO.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAqwBYAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-22T15:47:08.505Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Conexao.cs",
+              "DocumentMoniker": "C:\\Users\\giori\\OneDrive\\\u00C1rea de Trabalho\\miceGymSystem\\System\\MiceGymSystem\\Database\\Conexao.cs",
+              "RelativeDocumentMoniker": "Database\\Conexao.cs",
+              "ToolTip": "C:\\Users\\giori\\OneDrive\\\u00C1rea de Trabalho\\miceGymSystem\\System\\MiceGymSystem\\Database\\Conexao.cs",
+              "RelativeToolTip": "Database\\Conexao.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAcwCUAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-22T15:38:40.696Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "App.xaml",
+              "DocumentMoniker": "C:\\Users\\giori\\OneDrive\\\u00C1rea de Trabalho\\miceGymSystem\\System\\MiceGymSystem\\App.xaml",
+              "RelativeDocumentMoniker": "App.xaml",
+              "ToolTip": "C:\\Users\\giori\\OneDrive\\\u00C1rea de Trabalho\\miceGymSystem\\System\\MiceGymSystem\\App.xaml",
+              "RelativeToolTip": "App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-06-22T02:24:04.559Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
               "Title": "MainWindow.g.cs",
               "DocumentMoniker": "C:\\Users\\giori\\OneDrive\\\u00C1rea de Trabalho\\miceGymSystem\\System\\MiceGymSystem\\obj\\Debug\\MainWindow.g.cs",
               "RelativeDocumentMoniker": "obj\\Debug\\MainWindow.g.cs",

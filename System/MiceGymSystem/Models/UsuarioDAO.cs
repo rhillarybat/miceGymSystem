@@ -32,17 +32,18 @@ namespace MiceGymSystem.Models
 
                 if (linesSave > 0)
                 {
-                    MessageBox.Show("Registro Salvo com Sucesso!");
+                    //MessageBox.Show("");
+                    MessageBox.Show("Registro Salvo com Sucesso!", "Sucesso", MessageBoxButton.OK, MessageBoxImage.Information);
                 }
                 else
-                {
-                    MessageBox.Show("Erro ao salvar registro!");
+                {                    
+                    MessageBox.Show("Erro ao salvar registro!", "Erro", MessageBoxButton.OK, MessageBoxImage.Error);
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);
-                MessageBox.Show("Erro 3007 : Contate o suporte!");
+                //MessageBox.Show(ex.Message);                
+                MessageBox.Show("Erro 3007 : Contate o suporte!", "Erro", MessageBoxButton.OK, MessageBoxImage.Error);
             }
             finally
             {
