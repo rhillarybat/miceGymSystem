@@ -1,4 +1,6 @@
 ﻿using MiceGymSystem.Database;
+using MySql.Data.MySqlClient;
+using SISCAN.Helpers;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,6 +17,49 @@ namespace MiceGymSystem.Models
         public ClienteDAO()
         {
             conn = new Conexao();
+        }
+
+        public List<Cliente> List(string busca)
+        {
+            try
+            {
+                List<Cliente> listCli = new List<Cliente>();
+
+                var query = conn.Query();
+
+                if (busca == null)
+                {
+                    query.CommandText = "SELECT * FROM Cliente;";
+                }
+                else
+                {
+                    query.CommandText = $"SELECT * FROM Cliente WHERE (nome_cli LIKE '%{busca}%');";
+                }
+
+                MySqlDataReader reader = query.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    listCli.Add(new Cliente()
+                    {
+                        Id = reader.GetInt32("id_cli"),
+                        Nome = DAOHelper.GetString(reader, "nome_cli"),
+                        Cpf = DAOHelper.GetString(reader, "cpf_cli"),
+                        Email = DAOHelper.GetString(reader, "email_cli"),
+                        Telefone = DAOHelper.GetString(reader, "telefone_cli"),
+                    });
+                }
+
+                return listCli;
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+            finally
+            {
+                conn.Close();
+            }
         }
 
         public void Insert(Cliente cliente)

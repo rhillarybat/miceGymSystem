@@ -57,8 +57,8 @@ valor_equi DOUBLE,
 quantidade_equi INT,
 descricao_equi VARCHAR(100),
 codigo_equi VARCHAR(100),
-fk_academia_equi INT,
-FOREIGN KEY(fk_academia_equi) REFERENCES Academia(id_aca),
+#fk_academia_equi INT,
+#FOREIGN KEY(fk_academia_equi) REFERENCES Academia(id_aca),
 fk_fornecedor_equi INT,
 FOREIGN KEY(fk_fornecedor_equi) REFERENCES Fornecedor(id_forn)
 );
@@ -69,7 +69,7 @@ forma_pag VARCHAR(100),
 valor_pag DOUBLE,
 data_pag DATE,
 fk_cliente_pag INT,
-FOREIGN KEY(fk_cliente_pag) REFERENCES Cliente(id_cli),
-fk_academia_pag INT,
-FOREIGN KEY(fk_academia_pag) REFERENCES Academia(id_aca)
+FOREIGN KEY(fk_cliente_pag) REFERENCES Cliente(id_cli)
+#fk_academia_pag INT,
+#FOREIGN KEY(fk_academia_pag) REFERENCES Academia(id_aca)
 );

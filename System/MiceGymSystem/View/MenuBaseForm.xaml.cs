@@ -43,5 +43,26 @@ namespace MiceGymSystem.View
             form.Show();
             this.Close();
         }
+
+        private void btPagamento_Click(object sender, RoutedEventArgs e)
+        {
+            CreatePagamento form = new CreatePagamento(usuario);
+            form.Show();
+            this.Close();
+        }
+
+        private void btFuncionario_Click(object sender, RoutedEventArgs e)
+        {
+            CreateFuncionario form = new CreateFuncionario(usuario);
+            form.Show();
+            this.Close();
+        }
+
+        private void btEquipamento_Click(object sender, RoutedEventArgs e)
+        {
+            CreateEquipamentos form = new CreateEquipamentos(usuario);
+            form.Show();
+            this.Close();
+        }
     }
 }

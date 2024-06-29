@@ -121,21 +121,31 @@
     <Compile Include="Helper\DAOHelper.cs" />
     <Compile Include="Models\Cliente.cs" />
     <Compile Include="Models\ClienteDAO.cs" />
+    <Compile Include="Models\Equipamento.cs" />
+    <Compile Include="Models\EquipamentoDAO.cs" />
     <Compile Include="Models\Fornecedor.cs" />
     <Compile Include="Models\FornecedorDAO.cs" />
     <Compile Include="Models\Funcionario.cs" />
     <Compile Include="Models\FuncionarioDAO.cs" />
+    <Compile Include="Models\Pagamento.cs" />
+    <Compile Include="Models\PagamentoDAO.cs" />
     <Compile Include="View\CreateAccount.xaml.cs">
       <DependentUpon>CreateAccount.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\CreateCliente.xaml.cs">
       <DependentUpon>CreateCliente.xaml</DependentUpon>
     </Compile>
+    <Compile Include="View\CreateEquipamentos.xaml.cs">
+      <DependentUpon>CreateEquipamentos.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\CreateFornecedor.xaml.cs">
       <DependentUpon>CreateFornecedor.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\CreateFuncionario.xaml.cs">
       <DependentUpon>CreateFuncionario.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\CreatePagamento.xaml.cs">
+      <DependentUpon>CreatePagamento.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\MenuBaseForm.xaml.cs">
       <DependentUpon>MenuBaseForm.xaml</DependentUpon>
@@ -161,11 +171,19 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="View\CreateEquipamentos.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="View\CreateFornecedor.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="View\CreateFuncionario.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\CreatePagamento.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
