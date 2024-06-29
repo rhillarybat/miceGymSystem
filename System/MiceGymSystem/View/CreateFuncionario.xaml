@@ -1,4 +1,4 @@
-﻿<Window x:Class="MiceGymSystem.View.CreateCliente"
+﻿<Window x:Class="MiceGymSystem.View.CreateFuncionario"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -13,7 +13,7 @@
         TextOptions.TextFormattingMode="Ideal" 
         TextOptions.TextRenderingMode="Auto"
         FontFamily="{DynamicResource MaterialDesignFont}"
-        Title="Cadastrar Cliente" Height="720" Width="1280" Icon="/Resources/Alter.png" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+        Title="CreateFuncionario" Height="720" Width="1280">
     <Window.Background>
         <ImageBrush ImageSource="/Resources/Background.png"/>
     </Window.Background>
@@ -37,7 +37,7 @@
                     </StackPanel.Background>
                 </StackPanel>
                 <StackPanel Height="24" VerticalAlignment="Center" Orientation="Horizontal">
-                    <TextBlock Text="CADASTRAR CLIENTE" Width="646" Foreground="White" Height="34" FontWeight="Bold" FontSize="18" Margin="19.6,0,0,0"/>
+                    <TextBlock Text="CADASTRAR FUNCIONÁRIO" Width="646" Foreground="White" Height="34" FontWeight="Bold" FontSize="18" Margin="19.6,0,0,0"/>
                 </StackPanel>
 
             </StackPanel>
@@ -52,44 +52,67 @@
         </Grid>
 
         <Grid Grid.Row="1" Margin="30" HorizontalAlignment="Left">
-            <StackPanel Margin="0,0,0,0">
-                <StackPanel Width="500" Margin="0 0 0 10">
-                    <TextBox x:Name="tbNome"
+            <StackPanel Margin="0,0,0,0" Width="850" Orientation="Horizontal">
+                <StackPanel Margin="0,0,30,0">
+                    <StackPanel Width="400" Margin="0 0 0 10" HorizontalAlignment="Left">
+                        <TextBox x:Name="tbNome"
                 VerticalAlignment="Top"
                 materialDesign:HintAssist.Hint="Nome"
                 AcceptsReturn="True"                  
                 Style="{StaticResource MaterialDesignOutlinedTextBox}"
                 TextWrapping="Wrap" BorderBrush="White" Foreground="White" BorderThickness="1.5,1.5,1.5,1.5"
                 />
-                </StackPanel>
-                <StackPanel Width="500" Margin="0 0 0 10">
-                    <TextBox x:Name="tbCpf"
+                    </StackPanel>
+                    <StackPanel Width="400" Margin="0 0 0 10" HorizontalAlignment="Left">
+                        <TextBox x:Name="tbCpf"
 VerticalAlignment="Top"
 materialDesign:HintAssist.Hint="Cpf"
 AcceptsReturn="True"                  
 Style="{StaticResource MaterialDesignOutlinedTextBox}"
 TextWrapping="Wrap" BorderBrush="White" Foreground="White" BorderThickness="1.5,1.5,1.5,1.5"
 />
-                </StackPanel>
-                <StackPanel Width="500" Margin="0 0 0 10">
-                    <TextBox x:Name="tbEmail"
+                    </StackPanel>
+                    <StackPanel Width="400" Margin="0 0 0 10" HorizontalAlignment="Left">
+                        <TextBox x:Name="tbEmail"
 VerticalAlignment="Top"
 materialDesign:HintAssist.Hint="Email"
 AcceptsReturn="True"                  
 Style="{StaticResource MaterialDesignOutlinedTextBox}"
 TextWrapping="Wrap" BorderBrush="White" Foreground="White" BorderThickness="1.5,1.5,1.5,1.5"
 />
-                </StackPanel>
-                <StackPanel Width="500" Margin="0 0 0 10">
-                    <TextBox x:Name="tbTelefone"
+                    </StackPanel>
+                    <StackPanel Width="400" Margin="0 0 0 10" HorizontalAlignment="Left">
+                        <TextBox x:Name="tbTelefone"
 VerticalAlignment="Top"
 materialDesign:HintAssist.Hint="Telefone"
 AcceptsReturn="True"                  
 Style="{StaticResource MaterialDesignOutlinedTextBox}"
 TextWrapping="Wrap" BorderBrush="White" Foreground="White" BorderThickness="1.5,1.5,1.5,1.5"
 />
+                    </StackPanel>
+                    <StackPanel Width="400" Margin="0 0 0 10" HorizontalAlignment="Left">
+                        <TextBox x:Name="tbCargo"
+VerticalAlignment="Top"
+materialDesign:HintAssist.Hint="Cargo"
+AcceptsReturn="True"                  
+Style="{StaticResource MaterialDesignOutlinedTextBox}"
+TextWrapping="Wrap" BorderBrush="White" Foreground="White" BorderThickness="1.5,1.5,1.5,1.5"
+/>
+                    </StackPanel>
+                </StackPanel>
+                <StackPanel Margin="0,0,0,0">
+                    <StackPanel Width="400" Margin="0 0 0 10" HorizontalAlignment="Left">
+                        <TextBox x:Name="tbExp"
+                VerticalAlignment="Top"
+                materialDesign:HintAssist.Hint="Experiência"
+                AcceptsReturn="True"                  
+                Style="{StaticResource MaterialDesignOutlinedTextBox}"
+                TextWrapping="Wrap" BorderBrush="White" Foreground="White" BorderThickness="1.5,1.5,1.5,1.5"
+                />
+                    </StackPanel>
                 </StackPanel>
             </StackPanel>
+
         </Grid>
 
         <Grid Grid.Row="2" HorizontalAlignment="Left" Margin="30,0,0,0">
@@ -98,7 +121,7 @@ TextWrapping="Wrap" BorderBrush="White" Foreground="White" BorderThickness="1.5,
             materialDesign:ButtonAssist.CornerRadius="5"
             IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}"
             Style="{StaticResource MaterialDesignRaisedLightButton}"
-            ToolTip="MaterialDesignRaisedLightButton with Round Corners" Width="250" Height="50" Background="White" BorderBrush="White" Click="btSalvar_Click" Cursor="Hand">
+            ToolTip="MaterialDesignRaisedLightButton with Round Corners" Width="250" Height="50" Background="White" BorderBrush="White" Click="btSalvar_Click">
                     <TextBlock Text="SALVAR" FontWeight="Bold" FontSize="18" />
                 </Button>
                 <Button x:Name="btCancelar" Margin="0 0 0 10"

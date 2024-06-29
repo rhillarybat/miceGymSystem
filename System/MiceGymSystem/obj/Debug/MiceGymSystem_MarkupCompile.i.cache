@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\giori\OneDrive\Área de Trabalho\miceGymSystem\System\MiceGymSystem\App.xaml
-449022327
+6-1743344579
 
-15-527037911
+212135108843
 36-231760988
-MainWindow.xaml;View\CreateAccount.xaml;View\CreateCliente.xaml;View\MenuBaseForm.xaml;
+MainWindow.xaml;View\CreateAccount.xaml;View\CreateCliente.xaml;View\CreateFornecedor.xaml;View\CreateFuncionario.xaml;View\MenuBaseForm.xaml;
 
-False
+True
 
