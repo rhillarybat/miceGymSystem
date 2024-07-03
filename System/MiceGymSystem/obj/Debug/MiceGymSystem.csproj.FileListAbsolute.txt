@@ -70,3 +70,7 @@ C:\Users\giori\OneDrive\Área de Trabalho\miceGymSystem\System\MiceGymSystem\obj
 C:\Users\giori\OneDrive\Área de Trabalho\miceGymSystem\System\MiceGymSystem\obj\Debug\View\CreateFuncionario.baml
 C:\Users\giori\OneDrive\Área de Trabalho\miceGymSystem\System\MiceGymSystem\obj\Debug\View\CreateEquipamentos.baml
 C:\Users\giori\OneDrive\Área de Trabalho\miceGymSystem\System\MiceGymSystem\obj\Debug\View\CreatePagamento.baml
+C:\Users\giori\OneDrive\Área de Trabalho\miceGymSystem\System\MiceGymSystem\obj\Debug\View\ListCliente.g.cs
+C:\Users\giori\OneDrive\Área de Trabalho\miceGymSystem\System\MiceGymSystem\obj\Debug\View\ListCliente.baml
+C:\Users\giori\OneDrive\Área de Trabalho\miceGymSystem\System\MiceGymSystem\obj\Debug\View\MenuBaseConsulta.g.cs
+C:\Users\giori\OneDrive\Área de Trabalho\miceGymSystem\System\MiceGymSystem\obj\Debug\View\MenuBaseConsulta.baml

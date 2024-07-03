@@ -21,12 +21,25 @@ namespace MiceGymSystem.View
     public partial class CreateCliente : Window
     {
         Usuario usuario;
-        public CreateCliente(Usuario user)
+        string tipo;
+        Cliente cliente;
+        public CreateCliente(Usuario user, string tipo, Cliente cliente)
         {
             InitializeComponent();
 
             usuario = user;
+            this.tipo = tipo;   
+            this.cliente = cliente;
             lbNomeUser.Text = usuario.Nome;
+
+            if (tipo == "U")
+            {
+                tbNome.Text = cliente.Nome;
+                tbEmail.Text = cliente.Email;
+                tbCpf.Text = cliente.Cpf;
+                tbTelefone.Text = cliente.Telefone;
+                lbTitulo.Text = "Atualizar Cliente";
+            }
         }
 
         private void btVoltar_Click(object sender, RoutedEventArgs e)
@@ -68,7 +81,16 @@ namespace MiceGymSystem.View
 
                     //Inserindo os Dados           
                     ClienteDAO clienteDAO = new ClienteDAO();
-                    clienteDAO.Insert(cliente);
+                    if (tipo == "I")
+                    {
+                        clienteDAO.Insert(cliente);
+                    }
+                    else
+                    {
+                        cliente.Id = this.cliente.Id;
+                        clienteDAO.Update(cliente);
+                    }
+                    
 
                     tbNome.Clear();
                     tbEmail.Clear();

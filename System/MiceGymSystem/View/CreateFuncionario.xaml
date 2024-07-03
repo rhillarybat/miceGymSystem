@@ -13,7 +13,7 @@
         TextOptions.TextFormattingMode="Ideal" 
         TextOptions.TextRenderingMode="Auto"
         FontFamily="{DynamicResource MaterialDesignFont}"
-        Title="CreateFuncionario" Height="720" Width="1280" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+        Title="Cadastrar Funcionario" Height="720" Width="1280" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Icon="/Resources/Alter.png">
     <Window.Background>
         <ImageBrush ImageSource="/Resources/Background.png"/>
     </Window.Background>

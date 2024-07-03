@@ -147,6 +147,12 @@
     <Compile Include="View\CreatePagamento.xaml.cs">
       <DependentUpon>CreatePagamento.xaml</DependentUpon>
     </Compile>
+    <Compile Include="View\ListCliente.xaml.cs">
+      <DependentUpon>ListCliente.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\MenuBaseConsulta.xaml.cs">
+      <DependentUpon>MenuBaseConsulta.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\MenuBaseForm.xaml.cs">
       <DependentUpon>MenuBaseForm.xaml</DependentUpon>
     </Compile>
@@ -184,6 +190,14 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="View\CreatePagamento.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\ListCliente.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\MenuBaseConsulta.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

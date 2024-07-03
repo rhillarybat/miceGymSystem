@@ -1,0 +1,109 @@
+﻿<Window x:Class="MiceGymSystem.View.ListCliente"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MiceGymSystem.View"
+        mc:Ignorable="d"
+        Style="{StaticResource MaterialDesignWindow}"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        TextElement.FontWeight="Regular"
+        TextElement.FontSize="13"
+        TextOptions.TextFormattingMode="Ideal" 
+        TextOptions.TextRenderingMode="Auto"
+        FontFamily="{DynamicResource MaterialDesignFont}"
+        Title="Consulta de Cliente" Height="720" Width="1280" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Icon="/Resources/Alter.png">
+    <Window.Background>
+        <ImageBrush ImageSource="/Resources/Background.png"/>
+    </Window.Background>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="6*"/>
+            <ColumnDefinition Width="2*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="2*"/>
+        </Grid.RowDefinitions>
+
+        <Grid>
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Top" Margin="30,30,0,0">
+                <StackPanel Height="37" Width="82">
+                    <StackPanel.Background>
+                        <ImageBrush ImageSource="/Resources/Alter.png"/>
+                    </StackPanel.Background>
+                </StackPanel>
+                <StackPanel Height="24" VerticalAlignment="Center" Orientation="Horizontal">
+                    <TextBlock Text="CONSULTAR CLIENTE" Width="646" Foreground="White" Height="34" FontWeight="Bold" FontSize="18" Margin="19.6,0,0,0"/>
+                </StackPanel>
+
+            </StackPanel>
+
+        </Grid>
+
+        <Grid Grid.Column="1">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0 25 50 0">
+                <TextBlock x:Name="lbNomeUser" Text="USUÁRIO (NOME)" Foreground="White" FontWeight="SemiBold" Margin="0 10 10 0" VerticalAlignment="Top" FontSize="16" TextAlignment="Right"/>
+                <materialDesign:PackIcon Kind="AccountCircle" Foreground="White" Width="40" Height="40" />
+            </StackPanel>
+        </Grid>
+
+        <Grid Grid.Row="1" Grid.ColumnSpan="2" Margin="30" HorizontalAlignment="Left">
+            <StackPanel>
+                <StackPanel Width="1201" Height="70">
+                    <TextBox x:Name="tbBusca" Margin="10 10 10 10"
+VerticalAlignment="Top"
+materialDesign:HintAssist.Hint="Buscar"
+AcceptsReturn="True"                  
+Style="{StaticResource MaterialDesignOutlinedTextBox}"
+TextWrapping="Wrap" BorderBrush="White" Foreground="White" BorderThickness="1.5,1.5,1.5,1.5" Background="#FF323232" TextChanged="tbBusca_TextChanged"
+/>
+                </StackPanel>
+                <StackPanel Margin="10,0,10,0">
+                    <DataGrid Grid.Row="2" x:Name="dgvList" IsReadOnly="true"
+          AutoGenerateColumns="False" AlternatingRowBackground="#FF1D1D1D" AlternationCount="2" Grid.ColumnSpan="2" ScrollViewer.HorizontalScrollBarVisibility="Visible" ScrollViewer.VerticalScrollBarVisibility="Visible" Height="350" Width="1220">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="Id" Binding="{Binding Id}"/>
+                            <DataGridTextColumn Header="Nome" Binding="{Binding Nome}"/>
+                            <DataGridTextColumn Header="CPF" Binding="{Binding Cpf}"/>
+                            <DataGridTextColumn Header="E-mail" Binding="{Binding Email}"/>
+                            <DataGridTextColumn Header="Telefone" Binding="{Binding Telefone}"/>
+
+                            <DataGridTemplateColumn Header="Ações">
+                                <DataGridTemplateColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <StackPanel Orientation="Horizontal">
+                                            <Button x:Name="btEdit" Style="{StaticResource MaterialDesignIconForegroundButton}" 
+                            Content="{materialDesign:PackIcon Pencil}"
+                            ToolTip="Editar Registro" Margin="0 0 5 0" Click="btEdit_Click" />
+                                            <Button x:Name="btDelete" Style="{StaticResource MaterialDesignIconForegroundButton}" 
+                            Content="{materialDesign:PackIcon Delete}"
+                            ToolTip="Excluir Registro" Click="btDelete_Click"/>
+                                        </StackPanel>
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellTemplate>
+                            </DataGridTemplateColumn>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </StackPanel>
+            </StackPanel>
+            
+        </Grid>
+
+        <Grid Grid.Row="2" HorizontalAlignment="Left" Margin="30,0,0,0">
+            <StackPanel Orientation="Horizontal">
+                
+                <Button x:Name="btVoltar" Margin="0 0 0 10"
+materialDesign:ButtonAssist.CornerRadius="5"
+IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}"
+Style="{StaticResource MaterialDesignRaisedLightButton}"
+ToolTip="MaterialDesignRaisedLightButton with Round Corners" Width="250" Height="50" Background="White" BorderBrush="White" Click="btVoltar_Click">
+                    <TextBlock Text="VOLTAR" FontWeight="Bold" FontSize="18" />
+                </Button>
+            </StackPanel>
+        </Grid>
+    </Grid>
+</Window>

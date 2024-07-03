@@ -27,6 +27,7 @@ namespace MiceGymSystem.View
             InitializeComponent();
             usuario = user;
             DadosCb();
+            lbNomeUser.Text = usuario.Nome;
         }
 
         private void btSalvar_Click(object sender, RoutedEventArgs e)

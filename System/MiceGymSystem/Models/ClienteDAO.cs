@@ -89,5 +89,61 @@ namespace MiceGymSystem.Models
                 conn.Close();
             }
         }
+        public void Update(Cliente cliente)
+        {
+            try
+            {
+                var query = conn.Query();
+                query.CommandText = $"UPDATE Cliente SET nome_cli = '{cliente.Nome}', email_cli = '{cliente.Email}', cpf_cli = '{cliente.Cpf}', telefone_cli = '{cliente.Telefone}' WHERE id_cli = '{cliente.Id}';";
+                
+                int linesSave = query.ExecuteNonQuery();
+
+                if (linesSave > 0)
+                {
+                    MessageBox.Show("Registro Salvo com Sucesso!", "Sucesso", MessageBoxButton.OK, MessageBoxImage.Information);
+                }
+                else
+                {
+                    MessageBox.Show("Erro ao salvar registro!", "Erro", MessageBoxButton.OK, MessageBoxImage.Error);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                MessageBox.Show("Erro 3007 : Contate o suporte!", "Erro", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+            finally
+            {
+                conn.Close();
+            }
+        }
+
+        public void Delete(Cliente cliente)
+        {
+            try
+            {
+                var query = conn.Query();
+                query.CommandText = $"DELETE FROM Cliente WHERE id_cli = '{cliente.Id}';";
+
+                int linesSave = query.ExecuteNonQuery();
+
+                if (linesSave > 0)
+                {
+                    MessageBox.Show("Registro deletado com Sucesso!", "Sucesso", MessageBoxButton.OK, MessageBoxImage.Information);
+                }
+                else
+                {
+                    MessageBox.Show("Erro ao deletar registro!", "Erro", MessageBoxButton.OK, MessageBoxImage.Error);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro 3007 : Contate o suporte!", "Erro", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+            finally
+            {
+                conn.Close();
+            }
+        }
     }
 }

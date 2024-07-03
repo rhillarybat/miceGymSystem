@@ -32,7 +32,7 @@ namespace MiceGymSystem.View
 
         private void btCliente_Click(object sender, RoutedEventArgs e)
         {
-            CreateCliente form = new CreateCliente(usuario);
+            CreateCliente form = new CreateCliente(usuario, "I", null);
             form.Show();
             this.Close();
         }
@@ -63,6 +63,18 @@ namespace MiceGymSystem.View
             CreateEquipamentos form = new CreateEquipamentos(usuario);
             form.Show();
             this.Close();
+        }
+
+        private void btConsultas_Click(object sender, RoutedEventArgs e)
+        {
+            MenuBaseConsulta form = new MenuBaseConsulta(usuario);
+            form.Show();
+            this.Close();
+        }
+
+        private void Window_Activated(object sender, EventArgs e)
+        {
+
         }
     }
 }
