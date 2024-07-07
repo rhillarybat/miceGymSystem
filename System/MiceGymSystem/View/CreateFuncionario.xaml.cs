@@ -1,4 +1,6 @@
-﻿using MiceGymSystem.Models;
+﻿using MiceGymSystem.Helper;
+using MiceGymSystem.Models;
+using MySqlX.XDevAPI;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -20,12 +22,27 @@ namespace MiceGymSystem.View
     /// </summary>
     public partial class CreateFuncionario : Window
     {
-        Usuario usuario;      
-        public CreateFuncionario(Usuario user)
+        Usuario usuario;
+        Funcionario funcionario;
+        string tipo;
+        public CreateFuncionario(Usuario user, string tipo, Funcionario funcionario)
         {
             InitializeComponent();
             usuario = user;
             lbNomeUser.Text = usuario.Nome;
+            this.tipo = tipo;
+            this.funcionario = funcionario;
+
+            if (tipo == "U")
+            {
+                tbNome.Text = funcionario.Nome;
+                tbEmail.Text = funcionario.Email;
+                tbCpf.Text = funcionario.Cpf;
+                tbTelefone.Text = funcionario.Telefone;
+                tbCargo.Text = funcionario.Cargo;
+                tbExp.Text = funcionario.Experiencia;
+                lbTitulo.Text = "Atualizar Funcionário";
+            }
         }
 
         private void btSalvar_Click(object sender, RoutedEventArgs e)
@@ -34,25 +51,41 @@ namespace MiceGymSystem.View
             {
                 if (tbNome.Text != "" && tbEmail.Text != "" && tbCpf.Text != "" && tbTelefone.Text != "" && tbCargo.Text != "" && tbExp.Text != "")
                 {
-                    //Setando informações na tabela cliente
-                    Funcionario funcionario = new Funcionario();
-                    funcionario.Nome = tbNome.Text;
-                    funcionario.Email = tbEmail.Text;
-                    funcionario.Cpf = tbCpf.Text;
-                    funcionario.Telefone = tbTelefone.Text;
-                    funcionario.Cargo = tbCargo.Text;
-                    funcionario.Experiencia = tbExp.Text;
+                    string retornoValidate = ValidateCpfCnpj.ValidateCPF(tbCpf.Text);
+                    if (retornoValidate != "Erro")
+                    {
+                        //Setando informações na tabela cliente
+                        Funcionario funcionario = new Funcionario();
+                        funcionario.Nome = tbNome.Text;
+                        funcionario.Email = tbEmail.Text;
+                        funcionario.Cpf = tbCpf.Text;
+                        funcionario.Telefone = tbTelefone.Text;
+                        funcionario.Cargo = tbCargo.Text;
+                        funcionario.Experiencia = tbExp.Text;
 
-                    //Inserindo os Dados           
-                    FuncionarioDAO funcionarioDAO = new FuncionarioDAO();
-                    funcionarioDAO.Insert(funcionario);
+                        //Inserindo os Dados           
+                        FuncionarioDAO funcionarioDAO = new FuncionarioDAO();
+                        if (tipo == "I")
+                        {
+                            funcionarioDAO.Insert(funcionario);
+                        }
+                        else
+                        {
+                            funcionario.Id = this.funcionario.Id;
+                            funcionarioDAO.Update(funcionario);
+                        }
 
-                    tbNome.Clear();
-                    tbEmail.Clear();
-                    tbCpf.Clear();
-                    tbTelefone.Clear();
-                    tbExp.Clear();
-                    tbCargo.Clear();
+                        tbNome.Clear();
+                        tbEmail.Clear();
+                        tbCpf.Clear();
+                        tbTelefone.Clear();
+                        tbExp.Clear();
+                        tbCargo.Clear();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Cpf Inválido!", "Erro", MessageBoxButton.OK, MessageBoxImage.Error);
+                    }
                 }
                 else
                 {
@@ -87,6 +120,11 @@ namespace MiceGymSystem.View
                 form.Show();
                 this.Close();
             }
+        }
+
+        private void tbCpf_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
         }
     }
 }

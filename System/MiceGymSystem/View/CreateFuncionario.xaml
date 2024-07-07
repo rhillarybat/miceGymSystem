@@ -37,7 +37,7 @@
                     </StackPanel.Background>
                 </StackPanel>
                 <StackPanel Height="24" VerticalAlignment="Center" Orientation="Horizontal">
-                    <TextBlock Text="CADASTRAR FUNCIONÁRIO" Width="646" Foreground="White" Height="34" FontWeight="Bold" FontSize="18" Margin="19.6,0,0,0"/>
+                    <TextBlock x:Name="lbTitulo" Text="CADASTRAR FUNCIONÁRIO" Width="646" Foreground="White" Height="34" FontWeight="Bold" FontSize="18" Margin="19.6,0,0,0"/>
                 </StackPanel>
 
             </StackPanel>
@@ -69,7 +69,7 @@ VerticalAlignment="Top"
 materialDesign:HintAssist.Hint="Cpf"
 AcceptsReturn="True"                  
 Style="{StaticResource MaterialDesignOutlinedTextBox}"
-TextWrapping="Wrap" BorderBrush="White" Foreground="White" BorderThickness="1.5,1.5,1.5,1.5"
+TextWrapping="Wrap" BorderBrush="White" Foreground="White" BorderThickness="1.5,1.5,1.5,1.5" TextChanged="tbCpf_TextChanged"
 />
                     </StackPanel>
                     <StackPanel Width="400" Margin="0 0 0 10" HorizontalAlignment="Left">

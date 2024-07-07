@@ -1,4 +1,6 @@
-﻿using MiceGymSystem.Models;
+﻿using MiceGymSystem.Helper;
+using MiceGymSystem.Models;
+using MySqlX.XDevAPI;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -21,11 +23,27 @@ namespace MiceGymSystem.View
     public partial class CreateFornecedor : Window
     {
         Usuario usuario;
-        public CreateFornecedor(Usuario user)
+        Fornecedor fornecedor;
+        string tipo;
+        public CreateFornecedor(Usuario user, string tipo, Fornecedor fornecedor)
         {
             InitializeComponent();
             usuario = user;
             lbNomeUser.Text = usuario.Nome;
+            this.tipo = tipo;
+            this.fornecedor = fornecedor;
+
+            if (tipo == "U")
+            {
+                tbFantasia.Text = fornecedor.Fantasia;
+                tbEmail.Text = fornecedor.Email;
+                tbCnpj.Text = fornecedor.Cnpj;
+                tbTelefone.Text = fornecedor.Telefone;
+                tbEndereco.Text = fornecedor.Endereco;
+                tbNum.Text = fornecedor.Numero;
+                tbBairro.Text = fornecedor.Bairro;
+                lbTitulo.Text = "Atualizar Fornecedor";
+            }
         }
 
         private void btSalvar_Click(object sender, RoutedEventArgs e)
@@ -34,28 +52,44 @@ namespace MiceGymSystem.View
             {
                 if (tbFantasia.Text != "" && tbEmail.Text != "" && tbCnpj.Text != "" && tbTelefone.Text != "" && tbEndereco.Text != "" && tbBairro.Text != "" && tbNum.Text != "")
                 {
-                    //Setando informações na tabela cliente
-                    Fornecedor fornecedor = new Fornecedor();
-                    fornecedor.Fantasia = tbFantasia.Text;
-                    fornecedor.Email = tbEmail.Text;
-                    fornecedor.Cnpj = tbCnpj.Text;
-                    fornecedor.Telefone = tbTelefone.Text;
-                    fornecedor.Endereco = tbEndereco.Text;
-                    fornecedor.Bairro = tbBairro.Text;
-                    fornecedor.Numero = tbNum.Text;
+                    string retornoValidate = ValidateCpfCnpj.ValidateCNPJ(tbCnpj.Text);
+                    if (retornoValidate != "Erro")
+                    {
+                        //Setando informações na tabela cliente
+                        Fornecedor fornecedor = new Fornecedor();
+                        fornecedor.Fantasia = tbFantasia.Text;
+                        fornecedor.Email = tbEmail.Text;
+                        fornecedor.Cnpj = tbCnpj.Text;
+                        fornecedor.Telefone = tbTelefone.Text;
+                        fornecedor.Endereco = tbEndereco.Text;
+                        fornecedor.Bairro = tbBairro.Text;
+                        fornecedor.Numero = tbNum.Text;
 
-                    //Inserindo os Dados           
-                    FornecedorDAO fornecedorDAO = new FornecedorDAO();
-                    fornecedorDAO.Insert(fornecedor);
+                        //Inserindo os Dados           
+                        FornecedorDAO fornecedorDAO = new FornecedorDAO();
+                        if (tipo == "I")
+                        {
+                            fornecedorDAO.Insert(fornecedor);
+                        }
+                        else
+                        {
+                            fornecedor.Id = this.fornecedor.Id;
+                            fornecedorDAO.Update(fornecedor);
+                        }
 
-                    tbFantasia.Clear();
-                    tbEmail.Clear();
-                    tbCnpj.Clear();
-                    tbTelefone.Clear();
-                    tbBairro.Clear();
-                    tbEndereco.Clear();
-                    tbNum.Clear();
 
+                        tbFantasia.Clear();
+                        tbEmail.Clear();
+                        tbCnpj.Clear();
+                        tbTelefone.Clear();
+                        tbBairro.Clear();
+                        tbEndereco.Clear();
+                        tbNum.Clear();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Cnpj Inválido!", "Erro", MessageBoxButton.OK, MessageBoxImage.Error);
+                    }
                 }
                 else
                 {

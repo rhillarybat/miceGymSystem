@@ -39,7 +39,7 @@ namespace MiceGymSystem.View
 
         private void btFornecedor_Click(object sender, RoutedEventArgs e)
         {
-            CreateFornecedor form = new CreateFornecedor(usuario);
+            CreateFornecedor form = new CreateFornecedor(usuario, "I", null);
             form.Show();
             this.Close();
         }
@@ -53,7 +53,7 @@ namespace MiceGymSystem.View
 
         private void btFuncionario_Click(object sender, RoutedEventArgs e)
         {
-            CreateFuncionario form = new CreateFuncionario(usuario);
+            CreateFuncionario form = new CreateFuncionario(usuario, "I", null);
             form.Show();
             this.Close();
         }

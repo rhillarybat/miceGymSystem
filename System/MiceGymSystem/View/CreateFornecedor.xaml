@@ -37,7 +37,7 @@
                     </StackPanel.Background>
                 </StackPanel>
                 <StackPanel Height="24" VerticalAlignment="Center" Orientation="Horizontal">
-                    <TextBlock Text="CADASTRAR FORNECEDOR" Width="646" Foreground="White" Height="34" FontWeight="Bold" FontSize="18" Margin="19.6,0,0,0"/>
+                    <TextBlock x:Name="lbTitulo" Text="CADASTRAR FORNECEDOR" Width="646" Foreground="White" Height="34" FontWeight="Bold" FontSize="18" Margin="19.6,0,0,0"/>
                 </StackPanel>
 
             </StackPanel>

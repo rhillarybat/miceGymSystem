@@ -41,9 +41,7 @@
                         Style="{StaticResource MaterialDesignOutlinedRevealPasswordBox}" Foreground="White" BorderBrush="White" SelectionBrush="Black" CaretBrush="Black" BorderThickness="1.5,1.5,0.5,1.5" AutomationProperties.IsColumnHeader="True"
                         />
                 </StackPanel>
-                <StackPanel Width="500" Margin="0 0 0 5">
-                    <TextBlock x:Name="btNewSenha" Text="Esqueci minha senha" Foreground="White" HorizontalAlignment="Right" TextDecorations="Underline"/>
-                </StackPanel>
+                <StackPanel Width="500" Margin="0 0 0 5"/>
                 <StackPanel Width="500">
                     <TextBlock x:Name="btNewAccount" Text="Criar nova conta" Foreground="White" HorizontalAlignment="Right" TextDecorations="Underline" MouseLeftButtonDown="btNewAccount_MouseLeftButtonDown_1"/>
                 </StackPanel>

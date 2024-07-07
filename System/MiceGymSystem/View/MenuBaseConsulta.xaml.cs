@@ -45,5 +45,19 @@ namespace MiceGymSystem.View
             form.Show();
             this.Close();
         }
+
+        private void btFornecedor_Click(object sender, RoutedEventArgs e)
+        {
+            ListFornecedor form = new ListFornecedor(usuario);
+            form.Show();
+            this.Close();
+        }
+
+        private void btFuncionario_Click(object sender, RoutedEventArgs e)
+        {
+            ListFuncionario form = new ListFuncionario(usuario);
+            form.Show();
+            this.Close();
+        }
     }
 }

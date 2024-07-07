@@ -119,6 +119,7 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Helper\DAOHelper.cs" />
+    <Compile Include="Helper\ValidateCpfCnpj.cs" />
     <Compile Include="Models\Cliente.cs" />
     <Compile Include="Models\ClienteDAO.cs" />
     <Compile Include="Models\Equipamento.cs" />
@@ -149,6 +150,12 @@
     </Compile>
     <Compile Include="View\ListCliente.xaml.cs">
       <DependentUpon>ListCliente.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\ListFornecedor.xaml.cs">
+      <DependentUpon>ListFornecedor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\ListFuncionario.xaml.cs">
+      <DependentUpon>ListFuncionario.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\MenuBaseConsulta.xaml.cs">
       <DependentUpon>MenuBaseConsulta.xaml</DependentUpon>
@@ -194,6 +201,14 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="View\ListCliente.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\ListFornecedor.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\ListFuncionario.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

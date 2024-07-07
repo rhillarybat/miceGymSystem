@@ -74,3 +74,7 @@ C:\Users\giori\OneDrive\Área de Trabalho\miceGymSystem\System\MiceGymSystem\obj
 C:\Users\giori\OneDrive\Área de Trabalho\miceGymSystem\System\MiceGymSystem\obj\Debug\View\ListCliente.baml
 C:\Users\giori\OneDrive\Área de Trabalho\miceGymSystem\System\MiceGymSystem\obj\Debug\View\MenuBaseConsulta.g.cs
 C:\Users\giori\OneDrive\Área de Trabalho\miceGymSystem\System\MiceGymSystem\obj\Debug\View\MenuBaseConsulta.baml
+C:\Users\giori\OneDrive\Área de Trabalho\miceGymSystem\System\MiceGymSystem\obj\Debug\View\ListFornecedor.g.cs
+C:\Users\giori\OneDrive\Área de Trabalho\miceGymSystem\System\MiceGymSystem\obj\Debug\View\ListFuncionario.g.cs
+C:\Users\giori\OneDrive\Área de Trabalho\miceGymSystem\System\MiceGymSystem\obj\Debug\View\ListFornecedor.baml
+C:\Users\giori\OneDrive\Área de Trabalho\miceGymSystem\System\MiceGymSystem\obj\Debug\View\ListFuncionario.baml

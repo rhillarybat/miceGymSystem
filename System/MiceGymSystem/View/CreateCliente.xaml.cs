@@ -1,4 +1,5 @@
-﻿using MiceGymSystem.Models;
+﻿using MiceGymSystem.Helper;
+using MiceGymSystem.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -72,30 +73,38 @@ namespace MiceGymSystem.View
             {
                 if (tbNome.Text != "" && tbEmail.Text != "" && tbCpf.Text != "" && tbTelefone.Text != "")
                 {
-                    //Setando informações na tabela cliente
-                    Cliente cliente = new Cliente();
-                    cliente.Nome = tbNome.Text;
-                    cliente.Email = tbEmail.Text;
-                    cliente.Cpf = tbCpf.Text;
-                    cliente.Telefone = tbTelefone.Text;
-
-                    //Inserindo os Dados           
-                    ClienteDAO clienteDAO = new ClienteDAO();
-                    if (tipo == "I")
+                    string retornoValidate = ValidateCpfCnpj.ValidateCPF(tbCpf.Text);
+                    if (retornoValidate != "Erro")
                     {
-                        clienteDAO.Insert(cliente);
+                        //Setando informações na tabela cliente
+                        Cliente cliente = new Cliente();
+                        cliente.Nome = tbNome.Text;
+                        cliente.Email = tbEmail.Text;
+                        cliente.Cpf = tbCpf.Text;
+                        cliente.Telefone = tbTelefone.Text;
+
+                        //Inserindo os Dados           
+                        ClienteDAO clienteDAO = new ClienteDAO();
+                        if (tipo == "I")
+                        {
+                            clienteDAO.Insert(cliente);
+                        }
+                        else
+                        {
+                            cliente.Id = this.cliente.Id;
+                            clienteDAO.Update(cliente);
+                        }
+
+
+                        tbNome.Clear();
+                        tbEmail.Clear();
+                        tbCpf.Clear();
+                        tbTelefone.Clear();
                     }
                     else
                     {
-                        cliente.Id = this.cliente.Id;
-                        clienteDAO.Update(cliente);
+                        MessageBox.Show("Cpf Inválido!", "Erro", MessageBoxButton.OK, MessageBoxImage.Error);
                     }
-                    
-
-                    tbNome.Clear();
-                    tbEmail.Clear();
-                    tbCpf.Clear();
-                    tbTelefone.Clear();
                 }
                 else
                 {
