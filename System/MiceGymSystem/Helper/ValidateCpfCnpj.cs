@@ -58,18 +58,19 @@ namespace MiceGymSystem.Helper
             // Remove a máscara e deixa apenas os números
             string cnpjNumeros = Regex.Replace(cnpj, "[^0-9]", "");
 
-            if (cnpjNumeros.Length != 14)
+            if (cnpjNumeros.Length != 14 || IsSequenciaInvalida(cnpjNumeros))
             {
                 return "Erro";
             }
 
-            // Fórmula de validação de CNPJ
-            int[] pesos = { 5, 4, 3, 2, 9, 8, 7, 6, 5, 4, 3, 2 };
+            // Fórmulas de validação de CNPJ
+            int[] pesosPrimeiroDigito = { 5, 4, 3, 2, 9, 8, 7, 6, 5, 4, 3, 2 };
+            int[] pesosSegundoDigito = { 6, 5, 4, 3, 2, 9, 8, 7, 6, 5, 4, 3, 2 };
 
             int soma = 0;
             for (int i = 0; i < 12; i++)
             {
-                soma += int.Parse(cnpjNumeros[i].ToString()) * pesos[i];
+                soma += int.Parse(cnpjNumeros[i].ToString()) * pesosPrimeiroDigito[i];
             }
             int digitoVerificador1 = soma % 11;
             digitoVerificador1 = (digitoVerificador1 < 2) ? 0 : (11 - digitoVerificador1);
@@ -77,7 +78,7 @@ namespace MiceGymSystem.Helper
             soma = 0;
             for (int i = 0; i < 13; i++)
             {
-                soma += int.Parse(cnpjNumeros[i].ToString()) * pesos[i];
+                soma += int.Parse(cnpjNumeros[i].ToString()) * pesosSegundoDigito[i];
             }
             int digitoVerificador2 = soma % 11;
             digitoVerificador2 = (digitoVerificador2 < 2) ? 0 : (11 - digitoVerificador2);
@@ -94,6 +95,7 @@ namespace MiceGymSystem.Helper
                 return "Erro";
             }
         }
+
         private static string FormatCNPJ(string cnpjNumeros)
         {
             return string.Format("{0}.{1}.{2}/{3}-{4}",
@@ -102,6 +104,24 @@ namespace MiceGymSystem.Helper
                 cnpjNumeros.Substring(5, 3),
                 cnpjNumeros.Substring(8, 4),
                 cnpjNumeros.Substring(12, 2));
+        }
+
+        private static bool IsSequenciaInvalida(string cnpjNumeros)
+        {
+            string[] sequenciasInvalidas = {
+            "00000000000000", "11111111111111", "22222222222222",
+            "33333333333333", "44444444444444", "55555555555555",
+            "66666666666666", "77777777777777", "88888888888888",
+            "99999999999999"
+        };
+            foreach (string seq in sequenciasInvalidas)
+            {
+                if (cnpjNumeros == seq)
+                {
+                    return true;
+                }
+            }
+            return false;
         }
     }
 }
